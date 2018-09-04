@@ -242,7 +242,7 @@ color: #1e90ff;
 }
 
 #gray-tile {
-  background-color: #c0c0c0;
+  background-color: #D3D3D3;
 }
 
 .info-under-image h1 {
@@ -293,7 +293,7 @@ color: #1e90ff;
   }
 
   #gray-tile {
-    background-color: #fff;
+    background-color: #D3D3D3;
   }
 
 }
@@ -367,5 +367,60 @@ color: #1e90ff;
     width: 100%;
     text-align: left;
     font-weight: normal;
+  }
+}
+
+.exhibit {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.exhibit .info-under-image h1 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+.image-container video{
+  width: 100%;
+}
+
+@media only screen and (max-width: 570px) {
+  .exhibit .desktop {
+    display: none;
+  }
+
+
+  .exhibit .main-text {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: normal;
+  height: 4rem;
+  border-top: 1px solid #c0c0c0;
+}
+
+footer a {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 570px) {
+  footer {
+    margin-top: 1.5rem;
+    padding: 1rem 0 1rem 1rem;
+    height: auto;
+  }
+
+  footer .left {
+    margin-top: 1rem;
   }
 }
