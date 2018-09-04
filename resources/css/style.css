@@ -1,0 +1,299 @@
+html{
+  font-size: 16px;
+  background-color: #fff;
+  font-family: Open sans, Helvetica, Sans-serif;
+  color: #333333;
+  letter-spacing: 0.0825rem;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  padding: 0 1.5rem;
+}
+
+.logo-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 2rem;
+  width: auto;
+}
+
+#colmar {
+  font-weight: bold;
+}
+
+#academy {
+  color: #c0c0c0;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  padding-right: 1rem;
+}
+
+header nav {
+  display: flex;
+  align-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.mobilenav{
+  display: none;
+}
+
+@media only screen and (min-width: 1824px) {
+  .main-container {
+    width: 114rem;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 570px) {
+  .desktop {
+    display: none;
+    border: 1px solid red;
+  }
+
+  .mobilenav {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+  }
+
+}
+
+/* Banner */
+.offset{
+  position: relative;
+  top: 4rem;
+}
+
+.main-container{
+  padding: 2rem 1.5rem;
+}
+
+.image-container{
+  overflow: hidden;
+}
+
+.image-container img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.banner{
+  background-color: #D3D3D3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-text{
+  width: 30%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ line-height: 1.2;
+}
+
+.banner-text h1{
+  font-size: 3rem;
+  font-weight: bolder;
+  width: 100%;
+  text-align: left;
+  margin: 2rem 0 2rem 2rem;
+}
+
+.banner-text h3{
+  font-size: 1.5rem;
+  margin: 0 0 2.5rem 0;
+}
+
+.start-btn{
+  background-color: #0000ff;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 570px) {
+  .banner {
+    flex-direction: column;
+    width: 100%;
+    border:
+  }
+
+  .start-btn {
+    background-color: #0000ff;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .main, .banner-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .banner-text .main-text {
+    text-align: left;
+  }
+
+  .banner-text h1, .banner-text h3 {
+    margin-left: 1rem;
+  }
+
+}
+
+.main-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-info .image-container {
+  width: 100%;
+}
+
+.main-info img {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-container {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.info-side {
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.info-side h3 {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.info-side h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-side a {
+color: #1e90ff;
+}
+
+.info-item .image-container {
+  width: 35%;
+  margin: 1rem;
+}
+
+#first-item {
+  margin-top: 0;
+}
+
+#gray-tile {
+  background-color: #c0c0c0;
+}
+
+.info-under-image h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+
+.info-under-image p {
+  font-size: 1.5rem;
+  margin-top: 24px;
+  line-height: 1.2;
+}
+
+#strategist{
+  font-size: 1rem;
+}
+
+#author {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: Helvetica;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 570px) {
+ .info .main {
+    display: none;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+
+  .info-item {
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid blue;
+  }
+
+  .info-item .image-container, .info-item .info-side {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .info-side {
+    padding-left: 1rem;
+  }
+
+  #gray-tile {
+    background-color: #fff;
+  }
+
+}
